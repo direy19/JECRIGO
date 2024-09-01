@@ -5,6 +5,7 @@ body {
     padding: 0;
     color: #fff; /* Color del texto */
     background-color: #000; /* Fondo de la página */
+    padding-top: 50px; /* Espaciado superior para evitar que el contenido se superponga con la barra de navegación */
 }
 
 /* Estilo para la barra de navegación */
@@ -12,6 +13,11 @@ nav {
     background-color: #dfea0d; /* Color de fondo para la barra de navegación */
     padding: 10px 0; /* Espaciado vertical */
     text-align: center; /* Centra el contenido de la barra de navegación */
+    position: fixed; /* Fija la barra de navegación en la parte superior */
+    top: 0; /* Posiciona la barra en la parte superior */
+    left: 0; /* Alinea la barra con el borde izquierdo */
+    width: 100%; /* Ancho completo de la barra de navegación */
+    z-index: 1000; /* Asegura que la barra esté encima de otros elementos */
 }
 
 nav ul {
@@ -42,6 +48,7 @@ nav a:hover {
     padding: 50px 20px; /* Espaciado alrededor del contenido */
 }
 
+/* Estilos para el encabezado de inicio */
 #inicio h1 {
     font-size: 2.5em; /* Tamaño del encabezado principal */
     margin: 0.5em 0; /* Margen vertical */
@@ -75,6 +82,11 @@ nav a:hover {
     width: 150px; /* Ancho fijo para las imágenes */
     height: auto; /* Altura automática para mantener la proporción */
     margin-right: 15px; /* Espaciado a la derecha de la imagen */
+    transition: transform 0.3s ease; /* Transición suave para el efecto de zoom */
+}
+
+.menu-item img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
 }
 
 .menu-item-info {
@@ -152,4 +164,3 @@ footer {
     width: 100%; /* Ancho completo del pie de página */
     bottom: 0; /* Posiciona el pie de página en la parte inferior */
 }
-
