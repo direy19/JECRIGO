@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Gris claro para el fondo */
+    background-color: #f4f4f4; /* Color de fondo suave que combina bien con negro y amarillo */
     color: #333;
 }
 
@@ -98,39 +98,76 @@ nav ul li a:hover {
     transform: scale(1.1); /* Ajusta el factor de escala según sea necesario */
 }
 
-/* Estilos de formulario */
-form {
+/* Formulario de Reserva */
+#reservar {
+    background-color: #e0e0e0; /* Fondo claro para el formulario */
+    padding: 20px;
+    border-radius: 10px;
     max-width: 600px;
-    margin: auto;
+    margin: 20px auto;
 }
 
-form label {
+#reservar h2 {
+    color: #ffcc00; /* Amarillo brillante */
+    margin-bottom: 20px;
+}
+
+#reservar label {
     display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
 }
 
-form input {
+#reservar input {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-form button {
+#reservar button {
     background-color: #ffcc00; /* Amarillo brillante */
     color: #000;
     border: none;
     padding: 10px 20px;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
-form button:hover {
-    background-color: #e6b800; /* Amarillo más oscuro en hover */
+#reservar button:hover {
+    background-color: #e0a800; /* Amarillo más oscuro en hover */
+}
+
+/* Contacto */
+#contacto {
+    background-color: #f4f4f4; /* Color de fondo que combina con el resto */
+    padding: 20px;
+    text-align: center;
+}
+
+#contacto h2 {
+    color: #ffcc00; /* Amarillo brillante */
+    margin-bottom: 20px;
+}
+
+/* Quiénes somos */
+#Quienes {
+    background-color: #e0e0e0; /* Fondo claro para la sección */
+    padding: 20px;
+    text-align: center;
+}
+
+#Quienes h2 {
+    color: #ffcc00; /* Amarillo brillante */
+    margin-bottom: 20px;
+}
+
+#Quienes p {
+    color: #333;
+    margin-bottom: 20px;
 }
 
 /* Footer */
@@ -143,16 +180,5 @@ footer {
 
 footer p {
     margin: 5px 0;
-}
-
-/* Estilos para secciones */
-html {
-    scroll-behavior: smooth; /* Habilita el desplazamiento suave */
-}
-
-section {
-    padding: 60px 20px; /* Espaciado para asegurar que las secciones no estén ocultas detrás del navbar */
-    margin: 0 auto;
-    max-width: 1200px; /* Opcional: Ajusta el ancho máximo de las secciones */
 }
 
