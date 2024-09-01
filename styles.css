@@ -1,148 +1,183 @@
-/* Tipografía */
+/* Estilos generales */
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #D3D3D3;
-    color: #2F4F4F;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-h1, h2, h3 {
-    font-family: 'Lora', serif;
-    color: #FFD700;
+    background-color: #f4f4f4; /* Color de fondo suave que combina bien con negro y amarillo */
+    color: #333;
 }
 
 /* Navegación */
+nav {
+    background-color: #000; /* Negro para contraste */
+    color: #ffcc00; /* Amarillo brillante */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
-    list-style: none;
-    background-color: #000046;
-    padding: 15px;
-    margin: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: #FFD700;
+    color: #ffcc00; /* Amarillo brillante */
     text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #1CB5E0;
+    color: #fff; /* Blanco en hover */
+    transform: scale(1.1); /* Aumento de tamaño en hover */
 }
 
-/* Hero Section */
-#inicio {
-    background: linear-gradient(45deg, #1CB5E0, #000046);
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-    position: relative;
-}
-
-.hero-image {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
-/* Menú */
-#menu {
-    background-color: #FFD700;
-    color: #2F4F4F;
-    padding: 50px 20px;
-    text-align: center;
-}
-
+/* Sección de Menú */
 .menu-category {
-    margin-bottom: 40px;
+    margin: 20px auto;
+    max-width: 1200px;
 }
 
 .menu-category h3 {
-    font-size: 28px;
-    margin-bottom: 10px;
+    color: #ffcc00; /* Amarillo brillante */
+    border-bottom: 2px solid #000; /* Línea negra */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.menu-category p {
-    font-size: 18px;
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-/* Formularios */
-form {
-    background-color: #fff;
+.menu-item img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease;
+}
+
+.menu-item img:hover {
+    transform: scale(1.05); /* Aumento de tamaño en hover */
+}
+
+.menu-item-info h4 {
+    margin: 0;
+    color: #333;
+}
+
+.menu-item-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Estilo para centrar la imagen y aplicar el efecto de zoom */
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Ajusta el factor de escala según sea necesario */
+}
+
+/* Formulario de Reserva */
+#reservar {
+    background-color: #e0e0e0; /* Fondo claro para el formulario */
     padding: 20px;
-    margin: 20px auto;
+    border-radius: 10px;
     max-width: 600px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
 }
 
-form label {
+#reservar h2 {
+    color: #ffcc00; /* Amarillo brillante */
+    margin-bottom: 20px;
+}
+
+#reservar label {
     display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
 }
 
-form input[type="text"], form input[type="email"], form input[type="date"], form input[type="time"], form input[type="number"] {
+#reservar input {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
-form button {
-    background-color: #1CB5E0;
-    color: white;
-    padding: 10px 20px;
+#reservar button {
+    background-color: #ffcc00; /* Amarillo brillante */
+    color: #000;
     border: none;
-    border-radius: 4px;
-    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
-form button:hover {
-    background-color: #000046;
+#reservar button:hover {
+    background-color: #e0a800; /* Amarillo más oscuro en hover */
 }
 
-/* Contacto y Quiénes Somos */
-#contacto, #quienes-somos {
-    padding: 50px 20px;
-    background-color: #2F4F4F;
-    color: #FFD700;
+/* Contacto */
+#contacto {
+    background-color: #f4f4f4; /* Color de fondo que combina con el resto */
+    padding: 20px;
     text-align: center;
 }
 
-/* ¿Por qué JECRIGO? */
-#por-que-jecrigo {
-    padding: 50px 20px;
-    background-color: #FFD700;
-    color: #2F4F4F;
+#contacto h2 {
+    color: #ffcc00; /* Amarillo brillante */
+    margin-bottom: 20px;
+}
+
+/* Quiénes somos */
+#Quienes {
+    background-color: #e0e0e0; /* Fondo claro para la sección */
+    padding: 20px;
     text-align: center;
 }
 
-.story-image {
-    max-width: 80%;
-    height: auto;
-    margin-top: 20px;
+#Quienes h2 {
+    color: #ffcc00; /* Amarillo brillante */
+    margin-bottom: 20px;
+}
+
+#Quienes p {
+    color: #333;
+    margin-bottom: 20px;
 }
 
 /* Footer */
 footer {
-    background-color: #000046;
-    color: #FFD700;
+    background-color: #000; /* Negro para contraste */
+    color: #ffcc00; /* Amarillo brillante */
     text-align: center;
-    padding: 20px;
+    padding: 15px 0;
 }
 
-/* Transiciones y Animaciones */
-button, a {
-    transition: background-color 0.3s ease, transform 0.3s ease;
-
+footer p {
+    margin: 5px 0;
+}
