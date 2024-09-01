@@ -3,18 +3,16 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-   
     background: #00F260;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #333;
 }
 
 /* Navegación */
 nav {
     background-color: #000; /* Negro para contraste */
-    color: #ffcc00; /* Amarillo brillante */
+    color: #00F260; /* Nuevo color */
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -34,7 +32,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffcc00; /* Amarillo brillante */
+    color: #00F260; /* Nuevo color */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -52,7 +50,7 @@ nav ul li a:hover {
 }
 
 .menu-category h3 {
-    color: #ffcc00; /* Amarillo brillante */
+    color: #00F260; /* Nuevo color */
     border-bottom: 2px solid #000; /* Línea negra */
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -112,7 +110,7 @@ nav ul li a:hover {
 }
 
 #reservar h2 {
-    color: #ffcc00; /* Amarillo brillante */
+    color: #00F260; /* Nuevo color */
     margin-bottom: 20px;
 }
 
@@ -131,7 +129,7 @@ nav ul li a:hover {
 }
 
 #reservar button {
-    background-color: #ffcc00; /* Amarillo brillante */
+    background-color: #00F260; /* Nuevo color */
     color: #000;
     border: none;
     padding: 10px 20px;
@@ -142,7 +140,7 @@ nav ul li a:hover {
 }
 
 #reservar button:hover {
-    background-color: #e0a800; /* Amarillo más oscuro en hover */
+    background-color: #00cc4f; /* Color más oscuro en hover */
 }
 
 /* Contacto */
@@ -153,7 +151,7 @@ nav ul li a:hover {
 }
 
 #contacto h2 {
-    color: #ffcc00; /* Amarillo brillante */
+    color: #00F260; /* Nuevo color */
     margin-bottom: 20px;
 }
 
@@ -165,7 +163,7 @@ nav ul li a:hover {
 }
 
 #Quienes h2 {
-    color: #ffcc00; /* Amarillo brillante */
+    color: #00F260; /* Nuevo color */
     margin-bottom: 20px;
 }
 
@@ -177,7 +175,7 @@ nav ul li a:hover {
 /* Footer */
 footer {
     background-color: #000; /* Negro para contraste */
-    color: #ffcc00; /* Amarillo brillante */
+    color: #00F260; /* Nuevo color */
     text-align: center;
     padding: 15px 0;
 }
