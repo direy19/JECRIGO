@@ -81,6 +81,22 @@ nav ul li a:hover {
     margin: 5px 0;
     color: #666;
 }
+/* Estilo para centrar la imagen y aplicar el efecto de zoom */
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Ajusta el factor de escala según sea necesario */
+}
+
 
 /* Footer */
 footer {
