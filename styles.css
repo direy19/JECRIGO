@@ -1,16 +1,20 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fff;
     color: #333;
 }
 
 /* Navegación */
 nav {
-    background-color: #e94e77; /* Rojo intenso */
-    padding: 10px;
+    background-color: #000; /* Negro para contraste */
+    color: #ffcc00; /* Amarillo brillante */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -22,85 +26,70 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: #fff; /* Blanco */
+    color: #ffcc00; /* Amarillo brillante */
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #f0c14b; /* Amarillo pálido */
+    color: #fff; /* Blanco en hover */
+    transform: scale(1.1); /* Aumento de tamaño en hover */
 }
 
-/* Secciones */
-section {
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #f5ab35; /* Naranja brillante */
-    border-radius: 8px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2, h3, h4 {
-    color: #333; /* Negro oscuro */
-}
-
-/* Estilos del botón de reservar */
-button {
-    padding: 10px;
-    background-color: #333; /* Negro */
-    color: #fff; /* Blanco */
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #e94e77; /* Rojo intenso */
-    color: #fff; /* Blanco */
-}
-
-/* Categorías del menú */
+/* Sección de Menú */
 .menu-category {
-    margin-bottom: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
 }
 
 .menu-category h3 {
-    color: #d4e157; /* Verde limón */
+    color: #ffcc00; /* Amarillo brillante */
+    border-bottom: 2px solid #000; /* Línea negra */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.sub-category {
-    margin-top: 10px;
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.sub-category h4 {
-    color: #d4e157; /* Verde limón */
+.menu-item img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease;
 }
 
-.menu-category ul {
-    list-style-type: none;
-    padding: 0;
+.menu-item img:hover {
+    transform: scale(1.05); /* Aumento de tamaño en hover */
 }
 
-.menu-category ul li {
-    margin-bottom: 10px;
+.menu-item-info h4 {
+    margin: 0;
+    color: #333;
+}
+
+.menu-item-info p {
+    margin: 5px 0;
+    color: #666;
 }
 
 /* Footer */
 footer {
+    background-color: #000; /* Negro para contraste */
+    color: #ffcc00; /* Amarillo brillante */
     text-align: center;
-    padding: 10px;
-    background-color: #333; /* Negro */
-    color: #fff; /* Blanco */
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 15px 0;
+}
+
+footer p {
+    margin: 5px 0;
 }
