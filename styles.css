@@ -65,47 +65,5 @@ nav ul li a:hover {
     height: auto;
     margin-right: 20px;
     border-radius: 10px; /* Bordes redondeados */
-    transition: transform 0.3s ease;
-}
+    
 
-.menu-item img:hover {
-    transform: scale(1.05); /* Aumento de tamaño en hover */
-}
-
-.menu-item-info h4 {
-    margin: 0;
-    color: #333;
-}
-
-.menu-item-info p {
-    margin: 5px 0;
-    color: #666;
-}
-/* Estilo para centrar la imagen y aplicar el efecto de zoom */
-.image-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.image-container img:hover {
-    transform: scale(1.1); /* Ajusta el factor de escala según sea necesario */
-}
-
-
-/* Footer */
-footer {
-    background-color: #000; /* Negro para contraste */
-    color: #ffcc00; /* Amarillo brillante */
-    text-align: center;
-    padding: 15px 0;
-}
-
-footer p {
-    margin: 5px 0;
-}
