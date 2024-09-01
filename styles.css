@@ -82,20 +82,36 @@ nav ul li a:hover {
     color: #FFD700; /* Texto amarillo */
 }
 
-/* Estilo para centrar la imagen y aplicar el efecto de zoom */
-.image-container {
-    text-align: center;
-    margin-top: 20px;
+/* Galería de imágenes */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
 }
 
-.image-container img {
-    max-width: 100%;
+.gallery img {
+    max-width: 300px;
+    width: 100%;
     height: auto;
-    transition: transform 0.3s ease;
+    border-radius: 10px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-image-container img:hover {
-    transform: scale(1.1); /* Ajusta el factor de escala según sea necesario */
+.gallery img:hover {
+    transform: scale(1.1); /* Aumento de tamaño */
+    opacity: 0.8; /* Reducir la opacidad */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividad de la galería */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* Formulario de Reserva */
@@ -172,6 +188,18 @@ image-container img:hover {
     margin-bottom: 20px;
 }
 
+/* Efecto de zoom para las imágenes dentro de "Quiénes somos" */
+#Quienes img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#Quienes img:hover {
+    transform: scale(1.1); /* Aumento de tamaño en hover */
+}
+
 /* Footer */
 footer {
     background-color: #000000; /* Fondo negro */
@@ -183,5 +211,3 @@ footer {
 footer p {
     margin: 5px 0;
 }
-
-
