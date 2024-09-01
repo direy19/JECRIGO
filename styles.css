@@ -1,0 +1,171 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente principal */
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Color del texto */
+    background-color: #000; /* Fondo de la página */
+    padding-top: 50px; /* Espaciado superior para evitar que el contenido se superponga con la barra de navegación */
+}
+
+/* Estilo para la barra de navegación */
+nav {
+    background-color: #dfea0d; /* Color de fondo para la barra de navegación */
+    padding: 10px 0; /* Espaciado vertical */
+    text-align: center; /* Centra el contenido de la barra de navegación */
+    position: fixed; /* Fija la barra de navegación en la parte superior */
+    top: 0; /* Posiciona la barra en la parte superior */
+    left: 0; /* Alinea la barra con el borde izquierdo */
+    width: 100%; /* Ancho completo de la barra de navegación */
+    z-index: 1000; /* Asegura que la barra esté encima de otros elementos */
+}
+
+nav ul {
+    list-style-type: none; /* Elimina los puntos de lista */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+    display: inline-block; /* Permite centrar la lista de elementos */
+}
+
+nav li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin: 0 15px; /* Espaciado horizontal entre elementos */
+}
+
+nav a {
+    color: #fff; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-weight: bold; /* Hace el texto del enlace en negrita */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Subraya el texto al pasar el mouse */
+}
+
+/* Estilos para la sección de inicio */
+#inicio {
+    text-align: center; /* Centra el contenido dentro de la sección */
+    padding: 50px 20px; /* Espaciado alrededor del contenido */
+}
+
+/* Estilos para el encabezado de inicio */
+#inicio h1 {
+    font-size: 2.5em; /* Tamaño del encabezado principal */
+    margin: 0.5em 0; /* Margen vertical */
+}
+
+#inicio p {
+    font-size: 1.2em; /* Tamaño del párrafo */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+/* Estilos para el menú */
+#menu {
+    padding: 20px; /* Espaciado alrededor del contenido */
+}
+
+.menu-category {
+    margin-bottom: 30px; /* Espaciado entre categorías de menú */
+}
+
+.menu-category h3 {
+    font-size: 2em; /* Tamaño del encabezado de la categoría */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+.menu-item {
+    display: flex; /* Usa Flexbox para alinear imagen y texto */
+    margin-bottom: 15px; /* Espaciado entre artículos del menú */
+}
+
+.menu-item img {
+    width: 150px; /* Ancho fijo para las imágenes */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-right: 15px; /* Espaciado a la derecha de la imagen */
+    transition: transform 0.3s ease; /* Transición suave para el efecto de zoom */
+}
+
+.menu-item img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
+
+.menu-item-info {
+    max-width: 500px; /* Ancho máximo para la información del artículo */
+}
+
+.menu-item-info h4 {
+    font-size: 1.5em; /* Tamaño del encabezado del artículo del menú */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+.menu-item-info p {
+    font-size: 1em; /* Tamaño del párrafo de la información del artículo */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+/* Estilos para la sección de reservación */
+#reservar {
+    padding: 20px; /* Espaciado alrededor del contenido */
+}
+
+#reserva-form {
+    display: flex; /* Usa Flexbox para alinear los campos del formulario */
+    flex-direction: column; /* Coloca los elementos en columna */
+}
+
+#reserva-form label {
+    margin-bottom: 5px; /* Espaciado debajo de las etiquetas */
+}
+
+#reserva-form input {
+    margin-bottom: 10px; /* Espaciado debajo de los campos de entrada */
+    padding: 10px; /* Espaciado interno de los campos de entrada */
+    border: 1px solid #ddd; /* Borde del campo de entrada */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 100%; /* Ancho completo del campo de entrada */
+}
+
+#reserva-form button {
+    padding: 10px; /* Espaciado interno del botón */
+    background-color: #d7de0e; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+#reserva-form button:hover {
+    background-color: #000046; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Estilos para la sección de contacto */
+#contacto {
+    padding: 20px; /* Espaciado alrededor del contenido */
+}
+
+/* Estilos para la sección de Quiénes Somos */
+#Quienes {
+    padding: 20px; /* Espaciado alrededor del contenido */
+    text-align: center; /* Centra el contenido dentro de la sección */
+}
+
+#Quienes img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Transición suave para el efecto de zoom */
+}
+
+#Quienes img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
+
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #e0c510; /* Color de fondo para el pie de página */
+    color: #fff; /* Color del texto del pie de página */
+    text-align: center; /* Centra el contenido dentro del pie de página */
+    padding: 20px; /* Espaciado alrededor del contenido */
+    width: 100%; /* Ancho completo del pie de página */
+    bottom: 0; /* Posiciona el pie de página en la parte inferior */
+}
