@@ -3,17 +3,16 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-
-    background: #fc4a1a;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #333;
 }
 
 /* Navegación */
 nav {
-    background-color: #000; /* Negro para contraste */
-    color: #00F260; /* Nuevo color */
+    background-color: #000046; /* Nuevo color */
+    color: #1CB5E0; /* Nuevo color */
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -33,7 +32,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #00F260; /* Nuevo color */
+    color: #1CB5E0; /* Nuevo color */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -51,8 +50,8 @@ nav ul li a:hover {
 }
 
 .menu-category h3 {
-    color: #00F260; /* Nuevo color */
-    border-bottom: 2px solid #000; /* Línea negra */
+    color: #1CB5E0; /* Nuevo color */
+    border-bottom: 2px solid #000046; /* Línea negra */
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -97,7 +96,7 @@ nav ul li a:hover {
     transition: transform 0.3s ease;
 }
 
-.image-container img:hover {
+image-container img:hover {
     transform: scale(1.1); /* Ajusta el factor de escala según sea necesario */
 }
 
@@ -111,7 +110,7 @@ nav ul li a:hover {
 }
 
 #reservar h2 {
-    color: #00F260; /* Nuevo color */
+    color: #1CB5E0; /* Nuevo color */
     margin-bottom: 20px;
 }
 
@@ -130,8 +129,8 @@ nav ul li a:hover {
 }
 
 #reservar button {
-    background-color: #00F260; /* Nuevo color */
-    color: #000;
+    background-color: #1CB5E0; /* Nuevo color */
+    color: #000046;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -141,7 +140,7 @@ nav ul li a:hover {
 }
 
 #reservar button:hover {
-    background-color: #00cc4f; /* Color más oscuro en hover */
+    background-color: #198fbd; /* Color más oscuro en hover */
 }
 
 /* Contacto */
@@ -152,7 +151,7 @@ nav ul li a:hover {
 }
 
 #contacto h2 {
-    color: #00F260; /* Nuevo color */
+    color: #1CB5E0; /* Nuevo color */
     margin-bottom: 20px;
 }
 
@@ -164,7 +163,7 @@ nav ul li a:hover {
 }
 
 #Quienes h2 {
-    color: #00F260; /* Nuevo color */
+    color: #1CB5E0; /* Nuevo color */
     margin-bottom: 20px;
 }
 
@@ -175,8 +174,8 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #000; /* Negro para contraste */
-    color: #00F260; /* Nuevo color */
+    background-color: #000046; /* Nuevo color */
+    color: #1CB5E0; /* Nuevo color */
     text-align: center;
     padding: 15px 0;
 }
