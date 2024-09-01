@@ -1,183 +1,155 @@
 /* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif; /* Fuente principal */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Color de fondo suave que combina bien con negro y amarillo */
-    color: #333;
+    color: #fff; /* Color del texto */
+    background-color: #000; /* Fondo de la página */
 }
 
-/* Navegación */
+/* Estilo para la barra de navegación */
 nav {
-    background-color: #000; /* Negro para contraste */
-    color: #ffcc00; /* Amarillo brillante */
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    background-color: #dfea0d; /* Color de fondo para la barra de navegación */
+    padding: 10px 0; /* Espaciado vertical */
+    text-align: center; /* Centra el contenido de la barra de navegación */
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+    list-style-type: none; /* Elimina los puntos de lista */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+    display: inline-block; /* Permite centrar la lista de elementos */
 }
 
-nav ul li {
-    margin: 0 20px;
+nav li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin: 0 15px; /* Espaciado horizontal entre elementos */
 }
 
-nav ul li a {
-    color: #ffcc00; /* Amarillo brillante */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
+nav a {
+    color: #fff; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-weight: bold; /* Hace el texto del enlace en negrita */
 }
 
-nav ul li a:hover {
-    color: #fff; /* Blanco en hover */
-    transform: scale(1.1); /* Aumento de tamaño en hover */
+nav a:hover {
+    text-decoration: underline; /* Subraya el texto al pasar el mouse */
 }
 
-/* Sección de Menú */
+/* Estilos para la sección de inicio */
+#inicio {
+    text-align: center; /* Centra el contenido dentro de la sección */
+    padding: 50px 20px; /* Espaciado alrededor del contenido */
+}
+
+#inicio h1 {
+    font-size: 2.5em; /* Tamaño del encabezado principal */
+    margin: 0.5em 0; /* Margen vertical */
+}
+
+#inicio p {
+    font-size: 1.2em; /* Tamaño del párrafo */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+/* Estilos para el menú */
+#menu {
+    padding: 20px; /* Espaciado alrededor del contenido */
+}
+
 .menu-category {
-    margin: 20px auto;
-    max-width: 1200px;
+    margin-bottom: 30px; /* Espaciado entre categorías de menú */
 }
 
 .menu-category h3 {
-    color: #ffcc00; /* Amarillo brillante */
-    border-bottom: 2px solid #000; /* Línea negra */
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    font-size: 2em; /* Tamaño del encabezado de la categoría */
+    margin-bottom: 10px; /* Margen inferior */
 }
 
 .menu-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    display: flex; /* Usa Flexbox para alinear imagen y texto */
+    margin-bottom: 15px; /* Espaciado entre artículos del menú */
 }
 
 .menu-item img {
-    max-width: 200px;
-    height: auto;
-    margin-right: 20px;
-    border-radius: 10px; /* Bordes redondeados */
-    transition: transform 0.3s ease;
+    width: 150px; /* Ancho fijo para las imágenes */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-right: 15px; /* Espaciado a la derecha de la imagen */
 }
 
-.menu-item img:hover {
-    transform: scale(1.05); /* Aumento de tamaño en hover */
+.menu-item-info {
+    max-width: 500px; /* Ancho máximo para la información del artículo */
 }
 
 .menu-item-info h4 {
-    margin: 0;
-    color: #333;
+    font-size: 1.5em; /* Tamaño del encabezado del artículo del menú */
+    margin: 0; /* Elimina el margen predeterminado */
 }
 
 .menu-item-info p {
-    margin: 5px 0;
-    color: #666;
+    font-size: 1em; /* Tamaño del párrafo de la información del artículo */
+    margin: 0; /* Elimina el margen predeterminado */
 }
 
-/* Estilo para centrar la imagen y aplicar el efecto de zoom */
-.image-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.image-container img:hover {
-    transform: scale(1.1); /* Ajusta el factor de escala según sea necesario */
-}
-
-/* Formulario de Reserva */
+/* Estilos para la sección de reservación */
 #reservar {
-    background-color: #e0e0e0; /* Fondo claro para el formulario */
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: 20px auto;
+    padding: 20px; /* Espaciado alrededor del contenido */
 }
 
-#reservar h2 {
-    color: #ffcc00; /* Amarillo brillante */
-    margin-bottom: 20px;
+#reserva-form {
+    display: flex; /* Usa Flexbox para alinear los campos del formulario */
+    flex-direction: column; /* Coloca los elementos en columna */
 }
 
-#reservar label {
-    display: block;
-    margin-bottom: 10px;
-    color: #333;
+#reserva-form label {
+    margin-bottom: 5px; /* Espaciado debajo de las etiquetas */
 }
 
-#reservar input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+#reserva-form input {
+    margin-bottom: 10px; /* Espaciado debajo de los campos de entrada */
+    padding: 10px; /* Espaciado interno de los campos de entrada */
+    border: 1px solid #ddd; /* Borde del campo de entrada */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 100%; /* Ancho completo del campo de entrada */
 }
 
-#reservar button {
-    background-color: #ffcc00; /* Amarillo brillante */
-    color: #000;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+#reserva-form button {
+    padding: 10px; /* Espaciado interno del botón */
+    background-color: #d7de0e; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
-#reservar button:hover {
-    background-color: #e0a800; /* Amarillo más oscuro en hover */
+#reserva-form button:hover {
+    background-color: #000046; /* Cambia el color de fondo al pasar el mouse */
 }
 
-/* Contacto */
+/* Estilos para la sección de contacto */
 #contacto {
-    background-color: #f4f4f4; /* Color de fondo que combina con el resto */
-    padding: 20px;
-    text-align: center;
+    padding: 20px; /* Espaciado alrededor del contenido */
 }
 
-#contacto h2 {
-    color: #ffcc00; /* Amarillo brillante */
-    margin-bottom: 20px;
-}
-
-/* Quiénes somos */
+/* Estilos para la sección de Quiénes Somos */
 #Quienes {
-    background-color: #e0e0e0; /* Fondo claro para la sección */
-    padding: 20px;
-    text-align: center;
+    padding: 20px; /* Espaciado alrededor del contenido */
+    text-align: center; /* Centra el contenido dentro de la sección */
 }
 
-#Quienes h2 {
-    color: #ffcc00; /* Amarillo brillante */
-    margin-bottom: 20px;
+#Quienes img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
-#Quienes p {
-    color: #333;
-    margin-bottom: 20px;
-}
-
-/* Footer */
+/* Estilos para el pie de página */
 footer {
-    background-color: #000; /* Negro para contraste */
-    color: #ffcc00; /* Amarillo brillante */
-    text-align: center;
-    padding: 15px 0;
+    background-color: #e0c510; /* Color de fondo para el pie de página */
+    color: #fff; /* Color del texto del pie de página */
+    text-align: center; /* Centra el contenido dentro del pie de página */
+    padding: 20px; /* Espaciado alrededor del contenido */
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    width: 100%; /* Ancho completo del pie de página */
+    bottom: 0; /* Posiciona el pie de página en la parte inferior */
 }
 
-footer p {
-    margin: 5px 0;
-}
