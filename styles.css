@@ -150,9 +150,15 @@ nav a:hover {
 }
 
 #Quienes img {
-    max-width: 100%; /* Asegura que la imagen no exceda el ancho de su contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Transición suave para el efecto de zoom */
 }
+
+#Quienes img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
+
 
 /* Estilos para el pie de página */
 footer {
