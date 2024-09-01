@@ -1,18 +1,16 @@
 /* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Verdana', sans-serif; /* Fuente estilizada */
     margin: 0;
     padding: 0;
-    background: #000046;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #333;
+    background: #000000;  /* Fondo negro */
+    color: #FFD700;  /* Texto amarillo */
 }
 
 /* Navegación */
 nav {
-    background-color: #000046; /* Nuevo color */
-    color: #1CB5E0; /* Nuevo color */
+    background-color: #000000; /* Fondo negro */
+    color: #FFD700; /* Texto amarillo */
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -32,7 +30,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #1CB5E0; /* Nuevo color */
+    color: #FFD700; /* Texto amarillo */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -50,8 +48,8 @@ nav ul li a:hover {
 }
 
 .menu-category h3 {
-    color: #1CB5E0; /* Nuevo color */
-    border-bottom: 2px solid #000046; /* Línea negra */
+    color: #FFD700; /* Texto amarillo */
+    border-bottom: 2px solid #000000; /* Línea negra */
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -76,12 +74,12 @@ nav ul li a:hover {
 
 .menu-item-info h4 {
     margin: 0;
-    color: #333;
+    color: #FFD700; /* Texto amarillo */
 }
 
 .menu-item-info p {
     margin: 5px 0;
-    color: #666;
+    color: #FFD700; /* Texto amarillo */
 }
 
 /* Estilo para centrar la imagen y aplicar el efecto de zoom */
@@ -102,7 +100,7 @@ image-container img:hover {
 
 /* Formulario de Reserva */
 #reservar {
-    background-color: #e0e0e0; /* Fondo claro para el formulario */
+    background-color: #333333; /* Fondo gris oscuro */
     padding: 20px;
     border-radius: 10px;
     max-width: 600px;
@@ -110,27 +108,29 @@ image-container img:hover {
 }
 
 #reservar h2 {
-    color: #1CB5E0; /* Nuevo color */
+    color: #FFD700; /* Texto amarillo */
     margin-bottom: 20px;
 }
 
 #reservar label {
     display: block;
     margin-bottom: 10px;
-    color: #333;
+    color: #FFD700; /* Texto amarillo */
 }
 
 #reservar input {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #FFD700; /* Borde amarillo */
     border-radius: 5px;
+    background-color: #000000; /* Fondo negro */
+    color: #FFD700; /* Texto amarillo */
 }
 
 #reservar button {
-    background-color: #1CB5E0; /* Nuevo color */
-    color: #000046;
+    background-color: #FFD700; /* Fondo amarillo */
+    color: #000000; /* Texto negro */
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -140,42 +140,42 @@ image-container img:hover {
 }
 
 #reservar button:hover {
-    background-color: #198fbd; /* Color más oscuro en hover */
+    background-color: #FFD300; /* Amarillo más oscuro en hover */
 }
 
 /* Contacto */
 #contacto {
-    background-color: #f4f4f4; /* Color de fondo que combina con el resto */
+    background-color: #333333; /* Fondo gris oscuro */
     padding: 20px;
     text-align: center;
 }
 
 #contacto h2 {
-    color: #1CB5E0; /* Nuevo color */
+    color: #FFD700; /* Texto amarillo */
     margin-bottom: 20px;
 }
 
 /* Quiénes somos */
 #Quienes {
-    background-color: #e0e0e0; /* Fondo claro para la sección */
+    background-color: #333333; /* Fondo gris oscuro */
     padding: 20px;
     text-align: center;
 }
 
 #Quienes h2 {
-    color: #1CB5E0; /* Nuevo color */
+    color: #FFD700; /* Texto amarillo */
     margin-bottom: 20px;
 }
 
 #Quienes p {
-    color: #333;
+    color: #FFD700; /* Texto amarillo */
     margin-bottom: 20px;
 }
 
 /* Footer */
 footer {
-    background-color: #000046; /* Nuevo color */
-    color: #1CB5E0; /* Nuevo color */
+    background-color: #000000; /* Fondo negro */
+    color: #FFD700; /* Texto amarillo */
     text-align: center;
     padding: 15px 0;
 }
@@ -183,4 +183,5 @@ footer {
 footer p {
     margin: 5px 0;
 }
+
 
