@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #f5f5f5; /* Gris claro para el fondo */
     color: #333;
 }
 
@@ -65,5 +65,94 @@ nav ul li a:hover {
     height: auto;
     margin-right: 20px;
     border-radius: 10px; /* Bordes redondeados */
-    
+    transition: transform 0.3s ease;
+}
+
+.menu-item img:hover {
+    transform: scale(1.05); /* Aumento de tamaño en hover */
+}
+
+.menu-item-info h4 {
+    margin: 0;
+    color: #333;
+}
+
+.menu-item-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Estilo para centrar la imagen y aplicar el efecto de zoom */
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Ajusta el factor de escala según sea necesario */
+}
+
+/* Estilos de formulario */
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #ffcc00; /* Amarillo brillante */
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e6b800; /* Amarillo más oscuro en hover */
+}
+
+/* Footer */
+footer {
+    background-color: #000; /* Negro para contraste */
+    color: #ffcc00; /* Amarillo brillante */
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Estilos para secciones */
+html {
+    scroll-behavior: smooth; /* Habilita el desplazamiento suave */
+}
+
+section {
+    padding: 60px 20px; /* Espaciado para asegurar que las secciones no estén ocultas detrás del navbar */
+    margin: 0 auto;
+    max-width: 1200px; /* Opcional: Ajusta el ancho máximo de las secciones */
+}
 
