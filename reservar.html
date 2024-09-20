@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegación -->
+
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="reservar.html">Reservar</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href= "quienes.html">Quienes somos</a></li>
+    </ul>
+</nav>
+    <h1>Reservacion</h1>
+</body>
+ <!-- Reservar -->
+ <section id="reservar">
+    <h2>Reservar una mesa</h2>
+
+    <form id="reserva-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+        
+        <label for="numero-personas">Número de Personas:</label>
+        <input type="number" id="numero-personas" name="numero-personas" min="1" required>
+        
+        <button type="submit">Reservar ahora</button>
+    </form>
+
+    <div id="mensaje" style="display: none; color: green; margin-top: 10px;">
+        Reservación registrada
+    </div>
+</section>
+
+<script>
+    document.getElementById('reserva-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Previene el envío del formulario
+
+        // Muestra el mensaje
+        document.getElementById('mensaje').style.display = 'block';
+
+        // Opcional: Puedes ocultar el formulario después de mostrar el mensaje
+        document.getElementById('reserva-form').reset();
+    });
+</script>
+</html>
