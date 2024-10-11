@@ -1,6 +1,9 @@
+/* Importar fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif; /* Fuente principal */
+    font-family: 'Poppins', sans-serif; /* Fuente principal */
     margin: 0;
     padding: 0;
     color: #fff; /* Color del texto */
@@ -10,7 +13,7 @@ body {
 
 /* Estilo para la barra de navegación */
 nav {
-    background-color: #e0c510; /* Color de fondo para la barra de navegación */
+    background-color: #2272FF; /* Color de fondo para la barra de navegación (azul neón) */
     padding: 10px 0; /* Espaciado vertical */
     text-align: center; /* Centra el contenido de la barra de navegación */
     position: fixed; /* Fija la barra de navegación en la parte superior */
@@ -126,46 +129,110 @@ nav a:hover {
 }
 
 #reserva-form button {
-    padding: 10px; /* Espaciado interno del botón */
-    background-color: #e0c510; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
-    border: none; /* Elimina el borde del botón */
-    border-radius: 5px; /* Bordes redondeados del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+   padding: 10px; 
+   background-color:#2272FF ;/* Color fondo botón (azul neón)*/
+   color :#fff ;/* Color texto botón*/
+   border:none ;/* Sin borde*/
+   border-radius :5px ;/* Bordes redondeados*/
+   cursor:pointer ;/* Cambia cursor al pasar sobre botón*/
 }
 
 #reserva-form button:hover {
-    background-color: #000046; /* Cambia el color de fondo al pasar el mouse */
+   background-color:#1D1D1D ;/* Cambia color al pasar sobre él (negro)*/
 }
 
-/* Estilos para la sección de contacto */
+/* Estilos para la sección de contacto*/
 #contacto {
-    padding: 20px; /* Espaciado alrededor del contenido */
+   padding :20px ;/* Espaciado alrededor del contenido*/
 }
 
-/* Estilos para la sección de Quiénes Somos */
+/* Estilos para la sección Quiénes Somos*/
 #Quienes {
-    padding: 20px; /* Espaciado alrededor del contenido */
-    text-align: center; /* Centra el contenido dentro de la sección */
+   padding :20px ;/* Espaciado alrededor del contenido*/
+   text-align:center ;/* Centra el contenido dentro*/
 }
 
 #Quienes img {
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.3s ease; /* Transición suave para el efecto de zoom */
+   max-width :100% ;
+   height:auto ;
+   transition :transform .3s ease ;/* Transición suave para efecto zoom*/
 }
 
 #Quienes img:hover {
-    transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
+   transform :scale(1.1) ;/* Aumenta tamaño al pasar mouse*/
 }
 
+/* Sección del carrito flotante (nuevo)*/
+#cart {
+   position: fixed;
+   top: 100px;
+   right: 20px;
+   width: 300px;
+   background-color:#2272FF;
+   padding :15px;
+   border-radius :8px;
+   z-index :999;
+   box-shadow :0 2px 5px rgba(0,0,0,0.5);
+}
 
-/* Estilos para el pie de página */
+#cart h3 {
+   margin-bottom :10px;
+   color:#333;
+}
+
+#cart-items {
+   list-style-type:none;
+   padding :0;
+}
+
+#cart-items li {
+   margin-bottom :5px;
+   color:#333;
+}
+
+/* Botón para limpiar el carrito (nuevo)*/
+#clear-cart {
+   padding :10px;
+   background-color :#e67e22;
+   color :#fff;
+   border:none;
+   border-radius :5px;
+   cursor:pointer ;
+}
+
+#clear-cart:hover {
+   background-color:#d35400 ;
+}
+
+/* Total flotante a la derecha (nuevo)*/
+#total {
+   position :fixed;
+   top :150px;
+   right :20px;
+   width :250px;
+   background-color:#2272FF;
+   padding :15px;
+   border-radius :8px;
+   z-index :999;
+   box-shadow :0 2px 5px rgba(0,0,0,0.5);
+}
+
+#total h4 {
+   margin-bottom :5px;
+   color:#333;
+}
+
+#total p {
+   font-size :1.2em;
+   font-weight:bold;
+   color:#333;
+}
+
+/* Estilos para pie de página*/
 footer {
-    background-color: #e0c510; /* Color de fondo para el pie de página */
-    color: #fff; /* Color del texto del pie de página */
-    text-align: center; /* Centra el contenido dentro del pie de página */
-    padding: 20px; /* Espaciado alrededor del contenido */
-    width: 100%; /* Ancho completo del pie de página */
-    bottom: 0; /* Posiciona el pie de página en la parte inferior */
+   background-color :#34495e ;/* Color fondo pie página*/
+   color :#ecf0f1 ;/* Color texto pie página*/
+   text-align:center ;/* Centra contenido dentro pie página*/
+   padding :20px ;/* Espaciado alrededor contenido*/
+   width :100% ;/* Ancho completo pie página*/
 }
