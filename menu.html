@@ -3,74 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Restaurante JECRIGO - Menú</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 > menu</h1>
-</body>
-<!-- Navegación -->
-<nav>
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="menu.html">Menú</a></li>
-        <li><a href="reservar.html">Reservar</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href= "quienes.html">Quienes somos</a></li>
-    </ul>
-</nav>
+    <h1>Menú</h1>
 
-   
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="reservar.html">Reservar</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="quienes.html">Quienes somos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menú -->
     <section id="menu">
         <!-- Desayunos -->
-             <div class="menu-category">
+        <div class="menu-category">
             <h3>Desayunos</h3>
             <div class="menu-item">
-                <img src="Carpeta/pancakes.jpg" alt="Panqueques">
+                <img src="pancakes.jpg" alt="Panqueques">
                 <div class="menu-item-info">
                     <h4>Panqueques</h4>
                     <p>Deliciosos panqueques con sirope de maple.</p>
+                    <p>Precio: $50 MXN</p>
+                    <button onclick="addToCart('Panqueques', 50)">Agregar al carrito</button>
                 </div>
             </div>
             <div class="menu-item">
-                <img src="Carpeta/huevos-benedictinos-o-benedict.jpg" alt="Huevos Benedictos">
-
+                <img src="huevos-benedictinos-o-benedict.jpg" alt="Huevos Benedictos">
                 <div class="menu-item-info">
                     <h4>Huevos Benedictos</h4>
                     <p>Huevos poché con salsa holandesa.</p>
+                    <p>Precio: $75 MXN</p>
+                    <button onclick="addToCart('Huevos Benedictos', 75)">Agregar al carrito</button>
                 </div>
             </div>
             <div class="menu-item">
-                <img src="Carpeta/tostadas_a_la_francesa.jpg" alt="Tostadas Francesas">
+                <img src="tostadas_a_la_francesa.jpg" alt="Tostadas Francesas">
                 <div class="menu-item-info">
                     <h4>Tostadas Francesas</h4>
                     <p>Tostadas rellenas con frutas y crema.</p>
+                    <p>Precio: $65 MXN</p>
+                    <button onclick="addToCart('Tostadas Francesas', 65)">Agregar al carrito</button>
                 </div>
             </div>
         </div>
 
         <!-- Jugos y Frutas -->
-               <div class="menu-category">
+        <div class="menu-category">
             <h3>Jugos y Frutas</h3>
             <div class="menu-item">
-                <img src="Carpeta/diferencias-zumo-natural-y-envasado-1024x674.jpg" alt="Jugo de Naranja">
+                <img src="diferencias-zumo-natural-y-envasado-1024x674.jpg" alt="Jugo de Naranja">
                 <div class="menu-item-info">
                     <h4>Jugo de Naranja</h4>
                     <p>Natural y refrescante.</p>
+                    <p>Precio: $30 MXN</p>
+                    <button onclick="addToCart('Jugo de Naranja', 30)">Agregar al carrito</button>
                 </div>
             </div>
             <div class="menu-item">
-                <img src="Carpeta/jugo-de-manzana.jpg" alt="Jugo de Manzana">
+                <img src="jugo-de-manzana.jpg" alt="Jugo de Manzana">
                 <div class="menu-item-info">
                     <h4>Jugo de Manzana</h4>
                     <p>Dulce y nutritivo.</p>
+                    <p>Precio: $35 MXN</p>
+                    <button onclick="addToCart('Jugo de Manzana', 35)">Agregar al carrito</button>
                 </div>
             </div>
             <div class="menu-item">
-                <img src="Carpeta/ensalada-frutas-mixtas_894906-707.jpg" alt="Fruta Mixta">
+                <img src="ensalada-frutas-mixtas_894906-707.jpg" alt="Fruta Mixta">
                 <div class="menu-item-info">
                     <h4>Fruta Mixta</h4>
                     <p>Una mezcla fresca de frutas de temporada.</p>
+                    <p>Precio: $40 MXN</p>
+                    <button onclick="addToCart('Fruta Mixta', 40)">Agregar al carrito</button>
                 </div>
             </div>
         </div>
@@ -79,24 +90,30 @@
         <div class="menu-category">
             <h3>Café y Postres</h3>
             <div class="menu-item">
-                <img src="Carpeta/cafe-expreso.jpg" alt="Café Espresso">
+                <img src="cafe-expreso.jpg" alt="Café Espresso">
                 <div class="menu-item-info">
                     <h4>Café Espresso</h4>
                     <p>Café fuerte y aromático.</p>
+                    <p>Precio: $25 MXN</p>
+                    <button onclick="addToCart('Café Espresso', 25)">Agregar al carrito</button>
                 </div>
             </div>
             <div class="menu-item">
-                <img src="Carpeta/PRINCIPAL.png" alt="Pay de nuez">
+                <img src="PRINCIPAL-INTERNA-3-3.png" alt="Pay de nuez">
                 <div class="menu-item-info">
                     <h4>Pay de nuez</h4>
-                    <p>Delicioso pay de nuez con una base crujiente y un relleno suave y dulce, adornado con nueces tostadas.</p>
+                    <p>Delicioso pay de nuez con una base crujiente y un relleno suave.</p>
+                    <p>Precio: $60 MXN</p>
+                    <button onclick="addToCart('Pay de Nuez', 60)">Agregar al carrito</button>
                 </div>
             </div>
             <div class="menu-item">
-                <img src="Carpeta/brownie.jpg" alt="Brownie">
+                <img src="brownie-recetas-saludables_6e41a648_230504112436_1200x630.jpg" alt="Brownie">
                 <div class="menu-item-info">
                     <h4>Brownie</h4>
                     <p>Chocolate intenso y delicioso.</p>
+                    <p>Precio: $50 MXN</p>
+                    <button onclick="addToCart('Brownie', 50)">Agregar al carrito</button>
                 </div>
             </div>
         </div>
@@ -107,41 +124,51 @@
             <div class="sub-category">
                 <h4>Sopas y Ensaladas</h4>
                 <div class="menu-item">
-                    <img src="Carpeta/sopa-de-tortilla-destacada-1200x900.jpg" alt="Sopa de Tortilla">
+                    <img src="sopa-de-tortilla-destacada-1200x900.jpg" alt="Sopa de Tortilla">
                     <div class="menu-item-info">
                         <h4>Sopa de Tortilla</h4>
                         <p>Cremosa y llena de sabor.</p>
+                        <p>Precio: $70 MXN</p>
+                        <button onclick="addToCart('Sopa de Tortilla', 70)">Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <img src="Carpeta/Ensalada_César-web-553x458.jpg" alt="Ensalada César">
+                    <img src="Ensalada_César-web-553x458.jpg" alt="Ensalada César">
                     <div class="menu-item-info">
                         <h4>Ensalada César</h4>
                         <p>Con pollo y aderezo casero.</p>
+                        <p>Precio: $80 MXN</p>
+                        <button onclick="addToCart('Ensalada César', 80)">Agregar al carrito</button>
                     </div>
                 </div>
             </div>
             <div class="sub-category">
                 <h4>Platos Principales</h4>
                 <div class="menu-item">
-                    <img src="Carpeta/download.jpg" alt="Filete de Res">
+                    <img src="download.jpg" alt="Filete de Res">
                     <div class="menu-item-info">
                         <h4>Filete de Res</h4>
                         <p>Cocido a la perfección.</p>
+                        <p>Precio: $150 MXN</p>
+                        <button onclick="addToCart('Filete de Res', 150)">Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <img src="Carpeta/pescado-a-la-parrilla-5-500x500.jpg" alt="Salmon a la Parrilla">
+                    <img src="pescado-a-la-parrilla-5-500x500.jpg" alt="Salmon a la Parrilla">
                     <div class="menu-item-info">
-                        <h4>Salmon a la Parrilla</h4>
+                        <h4>Salmón a la Parrilla</h4>
                         <p>Con salsa de limón y hierbas.</p>
+                        <p>Precio: $140 MXN</p>
+                        <button onclick="addToCart('Salmón a la Parrilla', 140)">Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <img src="Carpeta/ccc5abb234eb54cc35abddfe0194d976.jpg" alt="Hamburguesa Gourmet">
+                    <img src="ccc5abb234eb54cc35abddfe0194d976.jpg" alt="Hamburguesa Gourmet">
                     <div class="menu-item-info">
                         <h4>Hamburguesa Gourmet</h4>
                         <p>Con todos los acompañamientos.</p>
+                        <p>Precio: $120 MXN</p>
+                        <button onclick="addToCart('Hamburguesa Gourmet', 120)">Agregar al carrito</button>
                     </div>
                 </div>
             </div>
@@ -151,19 +178,76 @@
         <div class="menu-category">
             <h3>Bebidas</h3>
             <div class="menu-item">
-                <img src="Carpeta/agua-jarra-vaso-vidrio-wallpaper-thumb.jpg" alt="Agua">
+                <img src="agua-natural.jpg" alt="Agua Natural">
                 <div class="menu-item-info">
-                    <h4>Agua</h4>
-                    <p>Natural y refrescante.</p>
+                    <h4>Agua Natural</h4>
+                    <p>Refrescante y pura.</p>
+                    <p>Precio: $20 MXN</p>
+                    <button onclick="addToCart('Agua Natural', 20)">Agregar al carrito</button>
                 </div>
             </div>
             <div class="menu-item">
-                <img src="Carpeta/Refrescos_800.jpg" alt="Refresco">
+                <img src="coca.jpg" alt="Refresco de Cola">
                 <div class="menu-item-info">
-                    <h4>Refresco</h4>
-                    <p>Variedad de sabores.</p>
+                    <h4>Refresco de Cola</h4>
+                    <p>Bebida carbonatada clásica.</p>
+                    <p>Precio: $25 MXN</p>
+                    <button onclick="addToCart('Refresco de Cola', 25)">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="agua-de-jamaica.jpg" alt="Agua de Jamaica">
+                <div class="menu-item-info">
+                    <h4>Agua de Jamaica</h4>
+                    <p>Fresca y ligera.</p>
+                    <p>Precio: $30 MXN</p>
+                    <button onclick="addToCart('Agua de Jamaica', 30)">Agregar al carrito</button>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Carrito de compras -->
+    <section id="cart">
+        <h3>Carrito de Compras</h3>
+        <ul id="cart-list"></ul>
+        <p id="total-price">Total: $0 MXN</p>
+        <button id="purchase-btn" onclick="purchase()">Comprar</button>
+        <p id="purchase-message"></p>
+    </section>
+
+    <script>
+        let cart = [];
+
+        function addToCart(productName, price) {
+            // Agregar producto al carrito
+            cart.push({ name: productName, price: price });
+            updateCart();
+        }
+
+        function updateCart() {
+            let cartList = document.getElementById("cart-list");
+            let total = 0;
+            cartList.innerHTML = ""; // Limpiar lista
+            cart.forEach((item, index) => {
+                cartList.innerHTML += `<li>${item.name} - $${item.price} MXN</li>`;
+                total += item.price;
+            });
+            document.getElementById("total-price").innerText = "Total: $" + total + " MXN";
+        }
+
+        function purchase() {
+            if (cart.length > 0) {
+                // Limpiar carrito
+                cart = [];
+                updateCart();
+                // Mostrar mensaje de compra realizada
+                document.getElementById("purchase-message").innerText = "¡Compra realizada con éxito!";
+            } else {
+                // Mostrar mensaje de carrito vacío
+                document.getElementById("purchase-message").innerText = "Tu carrito está vacío.";
+            }
+        }
+    </script>
+</body>
 </html>
