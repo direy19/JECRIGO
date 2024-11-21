@@ -207,7 +207,7 @@
         </div>
     </section>
 
-    <!-- Carrito de compras -->
+     <!-- Carrito de compras -->
     <section id="cart">
         <h3>Carrito de Compras</h3>
         <ul id="cart-list"></ul>
@@ -217,7 +217,27 @@
     </section>
 
     <script>
-        let cartStatus = 'vacío';
+        let cart = [];
+
+        function addToCart(productName, price) {
+            // Agregar producto al carrito
+            cart.push({ name: productName, price: price });
+            updateCart();
+        }
+
+        function updateCart() {
+            let cartList = document.getElementById("cart-list");
+            let total = 0;
+            cartList.innerHTML = ""; // Limpiar lista
+            cart.forEach((item, index) => {
+                cartList.innerHTML += `<li>${item.name} - $${item.price} MXN</li>`;
+                total += item.price;
+            });
+            document.getElementById("total-price").innerText = "Total: $" + total + " MXN";
+        }
+
+        // Variable global para rastrear el estado del carrito
+let cartStatus = 'vacío';
 
 function purchase() {
     // Guardar el estado inicial del carrito
@@ -250,6 +270,8 @@ function purchase() {
         }
     }
 }
+
+
     </script>
 </body>
 </html>
