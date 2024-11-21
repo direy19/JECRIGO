@@ -217,37 +217,39 @@
     </section>
 
     <script>
-        let cart = [];
+        let cartStatus = 'vacío';
 
-        function addToCart(productName, price) {
-            // Agregar producto al carrito
-            cart.push({ name: productName, price: price });
-            updateCart();
-        }
+function purchase() {
+    // Guardar el estado inicial del carrito
+    const initialCartLength = cart.length;
 
-        function updateCart() {
-            let cartList = document.getElementById("cart-list");
-            let total = 0;
-            cartList.innerHTML = ""; // Limpiar lista
-            cart.forEach((item, index) => {
-                cartList.innerHTML += `<li>${item.name} - $${item.price} MXN</li>`;
-                total += item.price;
-            });
-            document.getElementById("total-price").innerText = "Total: $" + total + " MXN";
-        }
-
-        function purchase() {
-            if (cart.length > 0) {
-                // Limpiar carrito
-                cart = [];
-                updateCart();
-                // Mostrar mensaje de compra realizada
-                document.getElementById("purchase-message").innerText = "¡Compra realizada con éxito!";
-            } else {
-                // Mostrar mensaje de carrito vacío
+    if (cart.length > 0) {
+        // Limpiar carrito
+        cart = [];
+        updateCart();
+        
+        // Mostrar mensaje de compra realizada
+        document.getElementById("purchase-message").innerText = "¡Compra realizada con éxito!";
+        
+        // Ocultar el mensaje después de 3 segundos
+        setTimeout(function() {
+            document.getElementById("purchase-message").innerText = "";
+            
+            // Verificar si el carrito sigue vacío después de mostrar el mensaje
+            if (cart.length === 0) {
                 document.getElementById("purchase-message").innerText = "Tu carrito está vacío.";
+                cartStatus = 'vacío';
+            } else {
+                document.getElementById("purchase-message").innerText = "";
             }
+        }, 4000);
+    } else {
+        // Mostrar mensaje de carrito vacío solo si el carrito está realmente vacío
+        if (cartStatus === 'vacío') {
+            document.getElementById("purchase-message").innerText = "Tu carrito está vacío.";
         }
+    }
+}
     </script>
 </body>
 </html>
