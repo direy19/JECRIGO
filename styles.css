@@ -236,3 +236,23 @@ footer {
    padding :20px ;/* Espaciado alrededor contenido*/
    width :100% ;/* Ancho completo pie página*/
 }
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    #contacto p {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Reglas específicas para este rango de tamaños */
+}
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 1025px) {
+    /* Reglas específicas para esta pantalla más grande */
+}
