@@ -217,7 +217,7 @@
         <p id="purchase-message"></p>
     </section>
 
-<script>
+    <script>
         let cart = [];
 
         function addToCart(productName, price) {
@@ -245,6 +245,10 @@ function purchase() {
     const initialCartLength = cart.length;
 
     if (cart.length > 0) {
+        // Limpiar carrito
+        cart = [];
+        updateCart();
+        
         // Mostrar mensaje de compra realizada
         document.getElementById("purchase-message").innerText = "¡Compra realizada con éxito!";
         
@@ -252,8 +256,13 @@ function purchase() {
         setTimeout(function() {
             document.getElementById("purchase-message").innerText = "";
             
-            // No es necesario limpiar el carrito aquí
-            // El carrito se mantiene intacto después de una compra exitosa
+            // Verificar si el carrito sigue vacío después de mostrar el mensaje
+            if (cart.length === 0) {
+                document.getElementById("purchase-message").innerText = "Tu carrito está vacío.";
+                cartStatus = 'vacío';
+            } else {
+                document.getElementById("purchase-message").innerText = "";
+            }
         }, 4000);
     } else {
         // Mostrar mensaje de carrito vacío solo si el carrito está realmente vacío
@@ -264,7 +273,7 @@ function purchase() {
 }
 
 
-
     </script>
+
 </body>
 </html>
