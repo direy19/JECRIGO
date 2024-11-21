@@ -236,6 +236,15 @@ footer {
    padding :20px ;/* Espaciado alrededor contenido*/
    width :100% ;/* Ancho completo pie página*/
 }
+/*Poner pie de pagina hasta el final*/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1a1818;
+    text-align: center;
+  }
 /* Estilos para pantallas pequeñas */
 @media screen and (max-width: 600px) {
     nav ul {
