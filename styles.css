@@ -255,6 +255,15 @@ footer {
         font-size: 14px;
     }
 }
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+#contacto {
+  text-align: center;
+}
 
 /* Estilos para pantallas medianas */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
